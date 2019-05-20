@@ -142,7 +142,7 @@ display:block;
 	 a.callout{cursor:pointer;}
 	 .callout i.icon-4x{font-size:6em;}
 	 .callout h4{margin-bottom:30px;}
-	 .callout-top{margin:50px 0 0 0;}
+	 .callout-top{margin:0 0 0 0;}
 	 .callout p{margin-bottom:0;}
 	 .callout .button{margin-top:10px;}
 	 .callout.green{background:#19ad0b;/*#86dc00;*/}
@@ -158,7 +158,7 @@ display:block;
 }
 
 #hero {
-	height: 20rem;
+	/* height: 20rem; */
 	position: relative;
 }
 
@@ -192,3 +192,8 @@ ul.cd-dropdown-content {
 	line-height: inherit;
 
 }
+
+.cd-dropdown-wrapper ul, .cd-dropdown-wrapper ol {
+    list-style: none
+}
+

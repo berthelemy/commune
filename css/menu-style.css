@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    color: #3f8654;
+    color: #637b9b;
     text-decoration: none
 }
 
@@ -338,15 +338,15 @@ input[type=text]::-ms-reveal {
 }
 
 header {
-    height: 100px;
+    /*height: 100px;*/
     background: #fff
 }
 
 .cd-dropdown-wrapper {
     display: inline-block;
     position: relative;
-    height: 40px;
-    margin: 30px 0 0 5%;
+    /* height: 40px;
+    margin: 30px 0 0 5%; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
@@ -404,10 +404,10 @@ header {
         font-size: 1.5rem
     }
     .cd-dropdown-trigger.dropdown-is-active {
-        background-color: #3f8654
+        background-color: #173153;
     }
     .no-touch .cd-dropdown-trigger.dropdown-is-active:hover {
-        background-color: #47975f
+        background-color: #878183;
     }
     .cd-dropdown-trigger.dropdown-is-active::before,
     .cd-dropdown-trigger.dropdown-is-active::after {

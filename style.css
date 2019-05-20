@@ -78,7 +78,7 @@ background:#fff;
 	}
 
 /* NAV BAR*/
-.navbar{
+.navbar, header {
 position:fixed;
 top:0;
 left:0;
@@ -87,6 +87,7 @@ background:#000;
 color:#fff;
 z-index:1000;
 }
+
 
 	.navbar #logo{
 	position:absolute;
@@ -116,7 +117,7 @@ z-index:1000;
 		display:inline-block;
 		}
 
-		.navbar li a{
+		.navbar li a {
 		display:inline-block;
 		color:#efefef;
 		padding:1em 1.3em;
@@ -158,4 +159,36 @@ display:block;
 
 #hero {
 	height: 20rem;
+	position: relative;
+}
+
+figure {
+	
+}
+
+figcaption {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+}
+
+figcaption p {
+	color: #fff;
+	background-color: rgba(10,10,10,.5);
+	padding:1px 5px 1px 5px;
+
+}
+
+/* Mega menu */
+
+ul.cd-dropdown-content {
+	margin: 0;
+}
+
+.cd-dropdown-item h3 {
+	font-size: inherit;
+	margin: inherit;
+	line-height: inherit;
+
 }

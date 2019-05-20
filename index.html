@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="Un site web demo pour les communes" />
 <meta name="copyright" content="Mark Berthelemy" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
 <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
-<link rel="stylesheet" type="text/css" href="style.css" media="all" />                         
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/menu-style.css" media="all" />                         
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/kickstart.js"></script>                                  <!-- KICKSTART -->
 
 
@@ -16,29 +18,260 @@
         background-image:none;
         background-color: #efefef;
     }
-    .navbar {
+    .navbar, header {
         background: #637b9b;
     }
     .callout {
         background-image: url("img/IMG_20190402_121936.jpg");
     }
 </style>
+<script src="js/modernizr.js"></script> 
+
+
 </head><body>
 <!-- ===================================== END HEADER ===================================== -->
-<nav class="navbar">
-<!--<a class="hide-phone" id="logo" href="http://www.99lime.com"><img src="https://via.placeholder.com/300x51.png?text=Votre+logo" alt="logo" /></a>-->
-<ul>
-    <li><a href="index.html">Nom de commune</a></li>
-    <li><a href="/cartes">Cartes</a></li>
-    <li><a href="/actualites">Actualités</a></li>
-    <li><a href="/loisirs">Vie</a></li>
-    <li><a href="/evenements">Conseils</a></li>
-    <li><a href="/services">Services</a></li>
+<!-- Mega menu from https://codyhouse.co/gem/mega-dropdown -->
+<header>
+<div class="cd-dropdown-wrapper">
+<a class="cd-dropdown-trigger" href="#0">Menu</a>
+<nav class="cd-dropdown">
+<h2>Commune demo</h2>
+<a href="#0" class="cd-close">Close</a>
+<ul class="cd-dropdown-content">
+<li>
+</li>
+<li class="has-children">
+<a href="https://codyhouse.co/gem/mega-dropdown">Clothing</a>
+<ul class="cd-secondary-dropdown is-hidden">
+<li class="go-back"><a href="#0">Menu</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All Clothing</a></li>
+<li class="has-children">
+<a href="https://codyhouse.co/gem/mega-dropdown">Accessories</a>
+<ul class="is-hidden">
+<li class="go-back"><a href="#0">Clothing</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All Accessories</a></li>
+<li class="has-children">
+<a href="#0">Beanies</a>
+<ul class="is-hidden">
+<li class="go-back"><a href="#0">Accessories</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All Benies</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Caps &amp; Hats</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Gifts</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Scarves &amp; Snoods</a></li>
 </ul>
-</nav>
+</li>
+<li class="has-children">
+<a href="#0">Caps &amp; Hats</a>
+<ul class="is-hidden">
+<li class="go-back"><a href="#0">Accessories</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All Caps &amp; Hats</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Beanies</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Caps</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Hats</a></li>
+</ul>
+</li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Glasses</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Gloves</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Jewellery</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Scarves</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="https://codyhouse.co/gem/mega-dropdown">Bottoms</a>
+<ul class="is-hidden">
+<li class="go-back"><a href="#0">Clothing</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All Bottoms</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Casual Trousers</a></li>
+<li class="has-children">
+<a href="#0">Jeans</a>
+<ul class="is-hidden">
+<li class="go-back"><a href="#0">Bottoms</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All Jeans</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Ripped</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Skinny</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Slim</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Straight</a></li>
+</ul>
+</li>
+<li><a href="#0">Leggings</a></li>
+<li><a href="#0">Shorts</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="https://codyhouse.co/gem/mega-dropdown">Jackets</a>
+<ul class="is-hidden">
+<li class="go-back"><a href="#0">Clothing</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All Jackets</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Blazers</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Bomber jackets</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Denim Jackets</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Duffle Coats</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Leather Jackets</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Parkas</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="https://codyhouse.co/gem/mega-dropdown">Tops</a>
+<ul class="is-hidden">
+<li class="go-back"><a href="#0">Clothing</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All Tops</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Cardigans</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Coats</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Polo Shirts</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Shirts</a></li>
+<li class="has-children">
+<a href="#0">T-Shirts</a>
+<ul class="is-hidden">
+<li class="go-back"><a href="#0">Tops</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">All T-shirts</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Plain</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Print</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Striped</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Long sleeved</a></li>
+</ul>
+</li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Vests</a></li>
+</ul>
+</li>
+</ul> 
+</li> 
+<li class="has-children">
+<a href="https://codyhouse.co/gem/mega-dropdown">Gallery</a>
+<ul class="cd-dropdown-gallery is-hidden">
+<li class="go-back"><a href="#0">Menu</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">Browse Gallery</a></li>
+<li>
+<a class="cd-dropdown-item" href="https://codyhouse.co/gem/mega-dropdown">
+<img src="img/img.png" alt="Product Image">
+<h3>Product #1</h3>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item" href="https://codyhouse.co/gem/mega-dropdown">
+<img src="img/img.png" alt="Product Image">
+<h3>Product #2</h3>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item" href="https://codyhouse.co/gem/mega-dropdown">
+<img src="img/img.png" alt="Product Image">
+<h3>Product #3</h3>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item" href="https://codyhouse.co/gem/mega-dropdown">
+<img src="img/img.png" alt="Product Image">
+<h3>Product #4</h3>
+</a>
+</li>
+</ul> 
+</li> 
+<li class="has-children">
+<a href="https://codyhouse.co/gem/mega-dropdown">Services</a>
+<ul class="cd-dropdown-icons is-hidden">
+<li class="go-back"><a href="#0">Menu</a></li>
+<li class="see-all"><a href="https://codyhouse.co/gem/mega-dropdown">Browse Services</a></li>
+<li>
+<a class="cd-dropdown-item item-1" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #1</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-2" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #2</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-3" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #3</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-4" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #4</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-5" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #5</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-6" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #6</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-7" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #7</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-8" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #8</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-9" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #9</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-10" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #10</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-11" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #11</h3>
+<p>This is the item description</p>
+</a>
+</li>
+<li>
+<a class="cd-dropdown-item item-12" href="https://codyhouse.co/gem/mega-dropdown">
+<h3>Service #12</h3>
+<p>This is the item description</p>
+</a>
+</li>
+</ul> 
+</li> 
+<li class="cd-divider">Divider</li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Page 1</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Page 2</a></li>
+<li><a href="https://codyhouse.co/gem/mega-dropdown">Page 3</a></li>
+</ul> 
+</nav> 
+</div> 
+</header>
+
+
+<!--<nav class="navbar">-->
+<!--<a class="hide-phone" id="logo" href="http://www.99lime.com"><img src="https://via.placeholder.com/300x51.png?text=Votre+logo" alt="logo" /></a>-->
+
+
+<!--<ul>
+    <li><a href="index.html">Nom de commune</a></li>
+    
+        
+    <li><a href="/contact">Contact</a></li>
+</ul>
+</nav>-->
 <div id="hero" class="callout callout-top clearfix">
+    <figure>
+        <figcaption><p>Crédit d'image: Mark Berthelemy</p></figcaption>
+    </figure>
     <div class="grid">
-        <h1>Commune site web demo</h1>
+        <h1>Commune demo</h1>
         <h4>Site officiel</h4>
         <div>
             <form action="#">
@@ -47,57 +280,31 @@
             </form>
         </div>
  
-        <!--<div class="col_3">
-        <i class="fa fa-mobile fa-4x"></i><br />
-        Responsive
-        </div>
         
-        <div class="col_3">
-        <i class="fa fa-github fa-4x"></i><br />
-        MIT Open Source
-        </div>
-        
-        <div class="col_3">
-        <i class="fa fa-flag fa-4x"></i><br />
-        479 Icons<br />
-        </div>
-        
-        <div class="col_3 omega">
-        <i class="fa fa-tint fa-4x"></i><br />
-        Designer Friendly
-        </i>
-        </div>
-        <div class="clear"></div><br />
-        <a class="button red large" href="http://www.99lime.com/downloads/"><i class="fa fa-cloud-download"></i> Download (Github)</a> 
-        <span style="white-space: nowrap;">
-        <a class="button blue large" href="https://twitter.com/htmlkickstart"><i class="fa fa-twitter"></i></a>
-        <a class="button blue large" href="mailto:joshua@99lime.com"><i class="fa fa-envelope"></i></a></span><br />
-        <p>Downloaded over 91036 Times :)</p>
-    -->
     </div>
 </div>
 
 <div class="grid">
-    <div class="col_3">
-        <h4>Des Cartes</h4>
+    <div class="col_4">
+        <h4>Découvrir</h4>
             <ul>
-                <li><a href="#">Le ville</a></li>
-                <li><a href="#">Le domaine</a></li>
-                <li><a href="#">Randonées</a></li>
-                <li><a href="#">VTT</a></li>
+                <li><a href="#">Situation géographique et accès</a></li>
+                <li><a href="#">Histoire et patrimoine</a></li>
+                <li><a href="#">Balades et randonnées</a></li>
+                <li><a href="#">Musée</a></li>
             </ul>
     </div>
-    <div class="col_3">
+    <div class="col_4">
         <h4>La Vie</h4>
         <ul>
-                <li><a href="#">Le ville</a></li>
-                <li><a href="#">Le domaine</a></li>
-                <li><a href="#">Randonées</a></li>
-                <li><a href="#">VTT</a></li>
+                <li><a href="#">Ecoles</a></li>
+                <li><a href="#">Equipements culturels et sportifs</a></li>
+                <li><a href="#">Vie Associative</a></li>
+                <li><a href="#">Transports</a></li>
             </ul>
     </div>
-    <div class="col_3">
-        <h4>Le Conseil</h4>
+    <div class="col_4">
+        <h4>Une mairie à votre service</h4>
         <ul>
                 <li><a href="#">Le ville</a></li>
                 <li><a href="#">Le domaine</a></li>
@@ -105,8 +312,8 @@
                 <li><a href="#">VTT</a></li>
             </ul>
     </div>
-    <div class="col_3">
-        <h4>Services</h4>
+    <div class="col_4">
+        <h4>Vie municipale</h4>
         <ul>
                 <li><a href="#">Le ville</a></li>
                 <li><a href="#">Le domaine</a></li>
@@ -114,7 +321,26 @@
                 <li><a href="#">VTT</a></li>
             </ul>
     </div>
-    <div class="grid">
+    <div class="col_4">
+        <h4>Services et commerces</h4>
+        <ul>
+                <li><a href="#">Marchés Publics</a></li>
+                <li><a href="#">Le domaine</a></li>
+                <li><a href="#">Randonées</a></li>
+                <li><a href="#">VTT</a></li>
+            </ul>
+    </div>
+    <div class="col_4">
+    <h4>Guide des droits et démarches</h4>
+    <ul>
+            <li><a href="#">Le ville</a></li>
+            <li><a href="#">Le domaine</a></li>
+            <li><a href="#">Randonées</a></li>
+            <li><a href="#">VTT</a></li>
+        </ul>
+    </div>
+
+
         <div class="col_6">
             <h4>Actualités</h4>
             <article>
@@ -138,7 +364,7 @@
 <!-- ===================================== 
     INSTRUCTIONS 
 ===================================== -->
-<h3>Getting Started</h3>
+<h3 class="clear">Getting Started</h3>
 <ul class="tabs">
 <li><a href="#instructions">Instructions</a></li>
 </ul>
@@ -1880,17 +2106,9 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 <a href="http://www.99lime.com/_bak2/">Joshua Gatcke</a>
 </div>
 
+<script src="js/jquery.menu-aim.js"></script> 
+<script src="js/megamenu-main.js"></script> 
 <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1641401-6']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 
 </script>
 

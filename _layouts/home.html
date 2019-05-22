@@ -6,6 +6,10 @@ layout: default
         {% assign node_urlparts = node.url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
 
+        {% for node_urlpart in node_urlparts %}
+        {{ node_urlpart }}
+        {% endfor %}
+
       
         <li><a href="{{ node.url }}">{{ node.title }}</a></li>
       

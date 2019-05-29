@@ -1,78 +1,23 @@
 ---
 layout: default
 ---
-<ul>
-    {% for node in site.pages %}
-        {% assign node_urlparts = node.url | split: '/' %}
-        {% assign node_url_parts_size = node_url_parts | size %}
-
-        {% for node_urlpart in node_urlparts %}
-        {{ node_urlpart }}
-        {% endfor %}
-
-      
-        <li><a href="{{ node.url }}">{{ node.title }}</a></li>
-      
-    {% endfor %}
-</ul>
-
-
+{% assign count = 0 %}
 <div class="grid">
-    <div class="col_4">
-        <h4>Découvrir</h4>
-            <ul>
-                <li><a href="#">Situation géographique et accès</a></li>
-                <li><a href="#">Histoire et patrimoine</a></li>
-                <li><a href="#">Balades et randonnées</a></li>
-                <li><a href="#">Musée</a></li>
-            </ul>
-    </div>
-    <div class="col_4">
-        <h4>La Vie</h4>
-        <ul>
-                <li><a href="#">Ecoles</a></li>
-                <li><a href="#">Equipements culturels et sportifs</a></li>
-                <li><a href="#">Vie Associative</a></li>
-                <li><a href="#">Transports</a></li>
-            </ul>
-    </div>
-    <div class="col_4">
-        <h4>Une mairie à votre service</h4>
-        <ul>
-                <li><a href="#">Le ville</a></li>
-                <li><a href="#">Le domaine</a></li>
-                <li><a href="#">Randonées</a></li>
-                <li><a href="#">VTT</a></li>
-            </ul>
-    </div>
-    <div class="col_4">
-        <h4>Vie municipale</h4>
-        <ul>
-                <li><a href="#">Le ville</a></li>
-                <li><a href="#">Le domaine</a></li>
-                <li><a href="#">Randonées</a></li>
-                <li><a href="#">VTT</a></li>
-            </ul>
-    </div>
-    <div class="col_4">
-        <h4>Services et commerces</h4>
-        <ul>
-                <li><a href="#">Marchés Publics</a></li>
-                <li><a href="#">Le domaine</a></li>
-                <li><a href="#">Randonées</a></li>
-                <li><a href="#">VTT</a></li>
-            </ul>
-    </div>
-    <div class="col_4">
-    <h4>Guide des droits et démarches</h4>
-    <ul>
-            <li><a href="#">Le ville</a></li>
-            <li><a href="#">Le domaine</a></li>
-            <li><a href="#">Randonées</a></li>
-            <li><a href="#">VTT</a></li>
-        </ul>
-    </div>
-
+    
+{% for item in site.data.pagelist.toc %}
+    <div class="col_4"><h5>{{ item.title }}</h5>
+      <ul>
+        {% for entry in item.subfolderitems %}
+          <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+        {% endfor %}
+      </ul>
+  </div>
+  {% assign count = count | plus: 1 %}
+  {% assign countmod = count | modulo: 3 %}
+  {% if countmod == 0 %}
+    <div class="clear"></div>
+        {% endif %}
+  {% endfor %}
 
         <div class="col_6">
             <h4>Actualités</h4>

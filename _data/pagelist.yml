@@ -1,0 +1,83 @@
+docs_list_title: Navigation
+toc:
+  - title: Accueil
+    url: /
+  - title: Découvrir
+    url: /decouvrir
+    subfolderitems:
+      - page: Situation géographique et accès
+        url: /decouvrir/situation
+        icon: item-1
+        description: Quelques mots ici
+      - page: Histoire et patrimoine
+        url: /decouvrir/histoire-et-patrimoine
+        icon: item-1
+        description: Quelques mots ici
+      - page: Balades et randonnées
+        url: /decouvrir/balades-et-randonnees
+        icon: item-1
+        description: Quelques mots ici
+      - page: Musée
+        url: /decouvrir/musee
+        icon: item-1
+        description: Quelques mots ici
+  - title: La Vie
+    url: /vie
+    subfolderitems:
+      - page: Ecoles
+        url: /vie/ecoles
+        icon: item-1
+        description: Quelques mots ici
+      - page: Equipements culturels et sportifs
+        url: /vie/culturels-et-sportif
+        icon: item-1
+        description: Quelques mots ici
+      - page: Vie Associative
+        url: /vie/associative
+        icon: item-1
+        description: Quelques mots ici
+      - page: Transports
+        url: /vie/transports
+        icon: item-1
+        description: Quelques mots ici
+  - title: Une mairie à votre service
+    url: /mairie
+    subfolderitems:
+      - page: Le ville
+        url: /mairie/ville
+        icon: item-2
+        description: Quelques mots ici
+      - page: Le domaine
+        url: /mairie/domaine
+        icon: item-3
+        description: Quelques mots ici
+  - title: Vie municipale
+    subfolderitems:
+      - page: Le ville
+        url: /mairie/ville
+        icon: item-2
+        description: Quelques mots ici
+      - page: Le domaine
+        url: /mairie/domaine
+        icon: item-3
+        description: Quelques mots ici
+  - title: Services et commerces
+    subfolderitems:
+      - page: Le ville
+        url: /mairie/ville
+        icon: item-2
+        description: Quelques mots ici
+      - page: Le domaine
+        url: /mairie/domaine
+        icon: item-3
+        description: Quelques mots ici
+  - title: Guide des droits et démarches
+    subfolderitems:
+      - page: Le ville
+        url: /mairie/ville
+        icon: item-2
+        description: Quelques mots ici
+      - page: Le domaine
+        url: /mairie/domaine
+        icon: item-3
+        description: Quelques mots ici

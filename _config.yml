@@ -1,3 +1,5 @@
 title: Commune site web demo
 
 include: ['_pages']
+
+baseurl: /
